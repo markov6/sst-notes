@@ -6,6 +6,8 @@ export function ApiStack({ stack, app }) {
 
   // Create the API
   const api = new Api(stack, "Api", {
+    customDomain:
+      app.stage === "prod" ? "api.noinformation.net" : undefined,
     defaults: {
       authorizer: "iam",
       function: {
