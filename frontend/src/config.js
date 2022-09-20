@@ -1,4 +1,6 @@
 const config = {
+  SENTRY_DSN:
+    "https://1c4956278ab340c0851b55eb9795e99d@o1419148.ingest.sentry.io/6762899",
   //Backend config
 
   s3: {
